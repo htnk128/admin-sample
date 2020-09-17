@@ -39,7 +39,7 @@ export default class SearchForm extends Vue {
   search?: Function;
 
   @Prop({ type: Boolean, default: false })
-  opened?: boolean = false;
+  opened!: boolean;
 
   panel: number | null = this.opened ? 0 : null;
   valid: boolean = true;
